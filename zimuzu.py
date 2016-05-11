@@ -1,3 +1,5 @@
+#!/usr/bin/env/python
+#-*-coding:utf-8-*-
 # author: Friday
 import urllib.request
 import http.cookiejar
@@ -48,9 +50,9 @@ def sign(username, password):
         return False
     url += 'User/Login/ajaxLogin'
     postDict = {
-        'account': username,
-        'password': password,
-        'remember': 1,
+        'account': username',
+        'password': 'password',
+        'remember': '1',
         'url_back': 'http://www.zimuzu.tv/'
     }
     postData = urllib.parse.urlencode(postDict).encode()
