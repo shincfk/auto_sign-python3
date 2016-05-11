@@ -50,7 +50,7 @@ def sign(username, password):
         return False
     url += 'User/Login/ajaxLogin'
     postDict = {
-        'account': username',
+        'account': 'username',
         'password': 'password',
         'remember': '1',
         'url_back': 'http://www.zimuzu.tv/'
